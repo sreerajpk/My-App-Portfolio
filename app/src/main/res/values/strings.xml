@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My App Portfolio</string>
+    <string name="action_settings">Settings</string>
+    <string name="my_nanodegree_apps">My Nanodegree Apps!</string>
+    <string name="spotify_streamer">Spotify Streamer</string>
+    <string name="scores_app">Scores App</string>
+    <string name="library_app">Library App</string>
+    <string name="build_it_bigger">Build it bigger</string>
+    <string name="xyz_reader">XYZ Reader</string>
+    <string name="capstone_my_own_app">Capstone: My Own App</string>
+    <string name="spotify_app_toast">This button will launch my Spotify Streamer App!</string>
+    <string name="scores_app_toast">This button will launch my Scores App!</string>
+    <string name="library_app_toast">This button will launch my Library App!</string>
+    <string name="build_it_bigger_app_toast">This button will launch my Build It Bigger App!</string>
+    <string name="xyz_reader_app_toast">This button will launch my XYZ reader App!</string>
+    <string name="capstone_project_toast">This button will launch my Capstone Project!</string>
+</resources>
