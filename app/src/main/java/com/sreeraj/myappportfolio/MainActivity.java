@@ -1,5 +1,6 @@
 package com.sreeraj.myappportfolio;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -10,6 +11,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private static final String POPULAR_MOVIES_APP = "com.sreeraj.popularmovies";
     private Button spotifyStreamerButton;
     private Button scoresAppButton;
     private Button libraryAppButton;
@@ -48,10 +51,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+        Intent launchIntent = new Intent();
         int id = v.getId();
         switch (id) {
             case R.id.spotify_streamer_button:
-                showToast(getString(R.string.spotify_app_toast));
+                launchIntent = getPackageManager().getLaunchIntentForPackage(POPULAR_MOVIES_APP);
+                showToast(getString(R.string.popular_movies_app_toast));
                 break;
             case R.id.scores_app_button:
                 showToast(getString(R.string.scores_app_toast));
@@ -71,6 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             default:
                 break;
         }
+        startActivity(launchIntent);
     }
 
     private void showToast(String message) {

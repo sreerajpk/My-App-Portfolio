@@ -28,7 +28,7 @@
         style="@style/ButtonStyle"
         android:layout_marginTop="@dimen/margin_large"
         android:layout_weight="1"
-        android:text="@string/spotify_streamer"/>
+        android:text="@string/popular_movies"/>
 
     <Button
         android:id="@+id/scores_app_button"
